@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gundam roller vue</title>
+    <!-- vue script -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- css custom -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Gundam vue</h1>
+      <div class="container">
+        <div class="gundamcard" v-for="element in gundamlist">
+          <p class="gundamname">{{element.name}}</p>
+          <img :src="element.image" alt="">
+        </div>
+      </div>
+      <div class="carillon">
+        <img :src="gundamlist[indexgu].image  " alt="" />
+        <div><button @click="imgNext">&rarr;</button></div>
+      </div>
+    </div>
+    <!-- js script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/img/wall.jpg);
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: red;
+}
+
+.container {
+  display: flex;
+}
+
+.gundamcard {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 5px;
+}
+
+.gundamname {
+  text-align: center;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.carillon {
+  width: 800px;
+
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.img {
+  margin: 0 auto;
+}
+button {
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 30px;
+}
